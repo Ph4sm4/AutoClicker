@@ -29,8 +29,7 @@ void KeyBind::keyPressEvent(QKeyEvent *event)
     stream.reset();
     qDebug()<<"temp: "<<temp;
     stream << temp << '\n';
-    qDebug()<<"key: "<<event->key();
-    stream << QKeySequence((event->modifiers())+(event->key())).toString();
+    stream << QKeySequence(event->key()).toString();
     file.close();
     MainWindow::currentClick = "";
     this->close();

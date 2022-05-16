@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    setWindowIcon(QIcon(QCoreApplication::applicationDirPath() + "/app_icon.ico"));
 ///--------------------------------------------------------------------------------------------------------
     QFile file("settings.txt");
     file.open(QIODevice::ReadWrite);
