@@ -1,5 +1,5 @@
 # Autoclicker
-Written for my own personal use. Design idea taken from https://www.opautoclicker.com/ but slightly modified
+Written for my own personal use. Design idea was taken from https://www.opautoclicker.com/ but slightly modified
 
 ### Click options implemented:
 #### Mouse button
