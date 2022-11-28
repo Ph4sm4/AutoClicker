@@ -1,12 +1,12 @@
 # Autoclicker
 Written for my own personal use. Design idea was taken from https://www.opautoclicker.com/ but slightly modified
 
-### Click options implemented:
-#### Mouse button
+## Click options implemented:
+### Mouse button
 - Left
 - Right
 - Scroll
-#### Click type
+### Click type
 - Single
 - Double
 - Triple
