@@ -165,7 +165,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(thread, SIGNAL(getPosSignal()), this, SLOT(on_getPos_clicked()));
 ///--------------------------------------------------------------------------------------------------------
     qDebug()<<"window created";
-    setWindowIcon(QIcon(QCoreApplication::applicationDirPath() + "/click.ico"));
+    setWindowIcon(QIcon(QCoreApplication::applicationDirPath() + "/app_icon.ico"));
     setWindowFlags( Qt::Window | Qt::CustomizeWindowHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint | Qt::WindowMinimizeButtonHint | Qt::WindowCloseButtonHint );
 
 }
@@ -198,11 +198,12 @@ void MainWindow::on_start_clicked()
     timer->start();
     hasStarted = true;
     thread->clicked = true;
-
+    this->window()->setWindowTitle("AutoClicker - Clicking...");
 }
 
 void MainWindow::on_stop_clicked()
 {
+    this->window()->setWindowTitle("AutoClicker");
     clickCount = 0;
     qDebug()<<"stopped";
     timer->stop();
